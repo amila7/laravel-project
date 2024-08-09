@@ -34,7 +34,7 @@ Route::post('/create-meeting', [MeetingController::class, 'create']);
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
-Route::get('/zoom/authorize', [ZoomController::class, 'redirectToZoom']);
+// Route::get('/zoom/authorize', [ZoomController::class, 'redirectToZoom']);
 // Route::get('/zoom/callback', [ZoomController::class, 'handleZoomCallback']);
 
 Route::middleware('auth')->group(function () {
