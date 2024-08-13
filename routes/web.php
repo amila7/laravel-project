@@ -27,6 +27,8 @@ Route::get('/create-meeting', function () {
 
 
 Route::post('/create-meeting', [MeetingController::class, 'create']);
+Route::delete('/create-meeting', [MeetingController::class, 'delete']);
+
 
 
 
